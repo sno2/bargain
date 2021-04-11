@@ -23,7 +23,7 @@ function defineMetadata(constructor: Function, data: Metadata) {
   constructor.prototype[metadataSymbol] = data;
 }
 
-type PropertyOptions = string | Omit<PropertyMetadata, "key">;
+type PropertyOptions = string | Omit<Partial<PropertyMetadata>, "key">;
 
 export function Property(_opts?: PropertyOptions) {
   return function (target: any, propertyKey: string) {
@@ -49,7 +49,7 @@ export function Property(_opts?: PropertyOptions) {
         };
         break;
       default:
-        opts = { key: propertyKey, ..._opts };
+        opts = { key: propertyKey, serializedKey: propertyKey, ..._opts };
     }
 
     const meta = getMetadata(target.constructor)!;
