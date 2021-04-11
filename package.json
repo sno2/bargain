@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "bargain",
+  "version": "1.0.0-alpha.0",
+  "members": [
+    "./packages/*/"
+  ],
+  "description": "A simple TypeScript decorator-based library for serializing and deserializing data.",
+  "scripts": {
+    "build": "lerna run build",
+    "clean": "lerna run clean",
+    "test": "lerna run test"
+  },
+  "author": "Carter Snook",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}

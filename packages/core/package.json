@@ -1,0 +1,36 @@
+{
+  "name": "@bargain/core",
+  "amdName": "bargainCore",
+  "description": "An unofficial promise-based Pexels API wrapper with top-notch TypeScript support.",
+  "keywords": [
+    "typescript",
+    "typescript-generics",
+    "serialize",
+    "deserialize"
+  ],
+  "version": "1.0.0-alpha.0",
+  "source": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "exports": "dist/index.modern.js",
+  "module": "dist/index.module.js",
+  "unpkg": "dist/index.umd.js",
+  "jsdelivr": "dist/index.umd.js",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "clean": "rimraf dist",
+    "test": "jest",
+    "prepare": "npm run build"
+  },
+  "author": "Carter Snook",
+  "license": "MIT",
+  "devDependencies": {
+    "microbundle": "^0.13.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.2.3"
+  }
+}
