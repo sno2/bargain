@@ -25,7 +25,7 @@ function defineMetadata(constructor: Function, data: Metadata) {
 
 type PropertyOptions = string | Omit<Partial<PropertyMetadata>, "key">;
 
-export function Property(_opts?: PropertyOptions) {
+export function Property(_opts?: PropertyOptions): any {
   return function (target: any, propertyKey: string) {
     if (!hasMetadata(target.constructor)) {
       defineMetadata(target.constructor, {
