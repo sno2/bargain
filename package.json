@@ -5,7 +5,6 @@
   "members": [
     "./packages/*/"
   ],
-  "description": "A simple TypeScript decorator-based library for serializing and deserializing data.",
   "scripts": {
     "build": "lerna run build",
     "clean": "lerna run clean",
