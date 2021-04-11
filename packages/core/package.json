@@ -12,7 +12,7 @@
   "source": "src/index.ts",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
-  "exports": "dist/index.modern.js",
+  "exports": "./dist/index.modern.js",
   "module": "dist/index.module.js",
   "unpkg": "dist/index.umd.js",
   "jsdelivr": "dist/index.umd.js",
